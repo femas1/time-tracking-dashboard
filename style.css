@@ -15,12 +15,11 @@ body {
 
 .cardContainer {
     display: grid;
-    grid-template-columns: 120px 120px 120px;
-    grid-template-rows: 120px 120px 120px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     justify-content: center;
-    background-color: #fff;
 }
 
 #report {
@@ -28,5 +27,6 @@ body {
 }
 
 .cardContainer > div {
-    background-color: red;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
 }

@@ -6,4 +6,27 @@
 
 body {
     font-family: 'Rubik', sans-serif;
+    background-color: hsl(226, 43%, 10%);
+    height: 100vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    background-color: #fff;
+}
+
+#report {
+    grid-row-start: span 3;
+}
+
+.cardContainer > div {
+    background-color: red;
 }

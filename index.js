@@ -1,5 +1,6 @@
 'use strict';
 
+
 const cardWorkWeekly = document.querySelector('.card__work__hours--weekly');
 const cardPlayWeekly = document.querySelector('.card__play__hours--weekly');
 const cardStudyWeekly = document.querySelector('.card__study__hours--weekly');

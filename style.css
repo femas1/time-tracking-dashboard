@@ -23,6 +23,12 @@ body {
     justify-content: center;
 }
 
+.showDaily,
+.showWeekly,
+.showMonthly {
+    cursor: pointer;
+}
+
 #report {
     grid-row-start: span 2;
 }

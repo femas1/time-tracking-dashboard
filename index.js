@@ -1,5 +1,9 @@
 'use strict';
 
+fetch('./data.json')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
 
 const cardWorkWeekly = document.querySelector('.card__work__hours--weekly');
 const cardPlayWeekly = document.querySelector('.card__play__hours--weekly');

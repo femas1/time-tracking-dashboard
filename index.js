@@ -1,13 +1,8 @@
 'use strict';
 
-const getHourData = fetch('./data.json')
-    .then((res) => res.json())
-    .then((data) => {
-        console.log(data)
-        cardWorkWeekly.innerHTML = `${data[0].timeframes.monthly.current}hrs
-        `
-    })
-
+const showDaily = document.querySelector('.showDaily');
+const showWeekly = document.querySelector('.showWeekly');
+const showMonthly = document.querySelector('.showMonthly');
 
 const cardWorkDaily = document.querySelector('.card__work__hours--daily');
 const cardPlayDaily = document.querySelector('.card__play__hours--daily');
@@ -29,3 +24,18 @@ const cardStudyMonthly = document.querySelector('.card__study__hours--monthly');
 const cardExerciseMonthly = document.querySelector('.card__exercise__hours--monthly');
 const cardSocialMonthly = document.querySelector('.card__social__hours--monthly');
 const cardSelfcareMonthly = document.querySelector('.card__selfcare__hours--monthly');
+
+const getHourData = fetch('./data.json')
+    .then((res) => res.json())
+    .then((data) => {
+        console.log(data)
+
+        showDaily.addEventListener('click', () => {
+            cardWorkDaily.innerHTML = `${data[0].timeframes.daily.current} HOURS`
+            cardPlayDaily.innerHTML = `${data[0].timeframes.daily.current} HOURS`
+            cardStudyDaily.innerHTML = `${data[0].timeframes.daily.current} HOURS`
+            cardExerciseDaily.innerHTML = `${data[0].timeframes.daily.current} HOURS`
+            cardSocialDaily.innerHTML = `${data[0].timeframes.daily.current} HOURS`
+            cardSelfcareDaily.innerHTML = `${data[0].timeframes.daily.current} HOURS`
+        })
+    })

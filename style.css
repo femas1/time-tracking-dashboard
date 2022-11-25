@@ -26,10 +26,6 @@ body {
     grid-row-start: span 2;
 }
 
-#work {
-    background-color: hsl(15, 100%, 70%);
-}
-
 #icon-work,
 #icon-play,
 #icon-study,
@@ -50,6 +46,10 @@ body {
     border-radius: 20px;
     height: 80%;
     transform: translateY(25%);
+}
+
+#work {
+    background-color: hsl(15, 100%, 70%);
 }
 
 #play {
@@ -75,4 +75,26 @@ body {
 .cardContainer > div {
     background-color: hsl(235, 46%, 20%);
     border-radius: 20px;
+}
+
+.card__work__heading,
+.card__play__heading, 
+.card__study__heading,
+.card__exercise__heading,
+.card__social__heading,
+.card__self-care__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: hsl(0, 0%, 100%);
+    padding: 15px 0 0 0;
+}
+
+.card__work__heading__text,
+.card__play__heading__text,
+.card__study__heading__text,
+.card__exercise__heading__text,
+.card__social__heading__text,
+.card__self-care__heading__text {
+    font-weight: 500;
 }
